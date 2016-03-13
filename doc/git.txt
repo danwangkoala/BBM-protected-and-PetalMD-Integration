@@ -1,0 +1,17 @@
+Git CMD:
+1. get code
+git clone https://your-bitbucket-id@bitbucket.org/lmzf318/uw-cs792.git
+
+2. create local branch
+git checkout -b local-branch-name(e.g. dev001) origin/dev
+
+3. commit code to bitbucket
+git add your-edited-files
+
+git commit -m "your-comments"(remember to write meaningful commit comments)
+
+git fetch origin
+
+git rebase origin/dev
+
+git push origin local-branch-name:dev
