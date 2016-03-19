@@ -2,3 +2,5 @@
   Use Javascript to convert message from source type to destination type in the preprocessor of a Channel.
 2. Channels
   we ned 3 channels. One (channel A) for receiving messages from petal, one (channel B) for main code, one (channel C) for sending messages to BBM. By this design, we just need to change A and C to switch to new platforms.
+3. Import channels
+  In MC, you can just import channels of "Middleware.xml", "PetalReader.xml", and "BBMSender.xml". And "Petal2BBM.xml" is a libraby. So you should import it as a code template.
