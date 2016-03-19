@@ -1,3 +1,9 @@
+MC communicates with the source system via a source connector. Channels define message interfaces to trade
+data between systems. Source connectors link to a data source and listen/poll for data. Filters accept/reject
+messages based on programmed rules. Transformers manipulate and extract data from messages and can even
+create a new outbound message from inbound data. Destination connectors route transformed messages to
+destination systems and applications. -- From Mirth Connnect Introduction Document
+
 1. How to convert messages?
   Use Javascript to convert message from source type to destination type in the preprocessor of a Channel.
 2. Channels
