@@ -1,3 +1,0 @@
--server
--Xmx256m
--Djava.awt.headless=true
