@@ -1,0 +1,16 @@
+How to import .json file to mongoDB
+    Step1: go to the directory with the .json file
+    Step2: input this in terminal (assume that the file name is seed.json):
+            "mongoimport --db myangularproject-dev --collection things --type json --file seed.json --jsonArray"
+
+How to clear the current data in mongoDB
+    Step1: >mongo (open mongoDB shell)
+    Step2: >db (show the current db)
+    Step3: >use myangularproject-dev (switch to this DB)
+    Step4: >show collections (show this collection)
+    Step5: >db.things.find() (show all datas in this collection)
+    Step6: >db.things.drop() (clear the DB)
+
+
+How to create the new json file for importing DB
+    Step1: run the python file (createJson.py)

@@ -1,0 +1,74 @@
+<header class="hero-unit" id="banner">
+  <div class="container">
+    <h1>Welcom to PetalMD!</h1>
+  </div>
+</header>
+
+
+<div class="container">
+  <h1 class="page-header">Input:</h1>
+  
+  <form>
+    <div style="float:left; position:relative; margin-right:100px">
+	  <p><label class="field" for="first_name">First Name:</label>&nbsp;&nbsp;<input type="text" ng-model="newThing.first_name"/></p>
+	  <p><label class="field" for="last_name">Last Name:</label>&nbsp;&nbsp;<input type="text"  ng-model="newThing.last_name"/></p>
+	  <p><label class="field" for="license">License:</label>&nbsp;&nbsp;<input type="text" ng-model="newThng.license" /></p>
+      <p><label class="field" for="email">E-mail:</label>&nbsp;&nbsp;<input type="text" ng-model="newThing.email" /></p>
+	  <br>
+	  <p><label class="field" for="start_timestamp">Start timestamp:</label>&nbsp;&nbsp;<input type="text" ng-model="newThing.start_timestamp" /></p>
+	  <p><label class="field" for="contact_kind_1">Contact kind 1:</label>&nbsp;&nbsp;<input type="text" ng-model="newThing.contact_kind_1" /></p>
+	  <p><label class="field" for="contact_kind_2">Contact kind 2:</label>&nbsp;&nbsp;<input type="text" ng-model="newThing.contact_kind_2" /></p>
+	  <p><label class="field" for="contact_kind_3">Contact kind 3:</label>&nbsp;&nbsp;<input type="text" ng-model="newThing.contact_kind_3" /></p>
+	  <p><label class="field" for="contact_kind_4">Contact kind 4:</label>&nbsp;&nbsp;<input type="text" ng-model="newThing.contact_kind_4" /></p>
+
+	</div>
+    <div position-relative>
+      <p><label class="field" for="group_acronym">Group acronym:</label>&nbsp;&nbsp;<input type="text" ng-model="newThing.group_acronym" /></p>
+	  <p><label class="field" for="console_task_display_name">Console task display name:</label>&nbsp;&nbsp;<input type="text" ng-model="newThing.console_task_display_name" /></p>
+      <p><label class="field" for="group_task_name">Group task name:</label>&nbsp;&nbsp;<input type="text" ng-model="newThing.group_task_name" /></p>
+      <p><label class="field" for="group_task_abbreviation">Group task abbreviation:</label>&nbsp;&nbsp;<input type="text" ng-model="newThing.group_task_abbreviation" /></p>
+	  <br>
+	  <p><label class="field" for="end_timestamp">End timestamp:</label>&nbsp;&nbsp;<input type="text" ng-model="newThing.end_timestamp" /></p>
+	  <p><label class="field" for="contact_number_1">Contact number 1:</label>&nbsp;&nbsp;<input type="text" ng-model="newThing.contact_number_1" /></p>
+	  <p><label class="field" for="contact_number_2">Contact number 2:</label>&nbsp;&nbsp;<input type="text" ng-model="newThing.contact_number_2" /></p>
+	  <p><label class="field" for="contact_number_3">Contact number 3:</label>&nbsp;&nbsp;<input type="text" ng-model="newThing.contact_number_3" /></p>
+	  <p><label class="field" for="contact_number_4">Contact number 4:</label>&nbsp;&nbsp;<input type="text" ng-model="newThing.contact_number_4" /></p>
+    </div>
+    <div> 
+	<br><br>
+    <div class= "submitWrapper">
+      <input type="submit" ng-click="main.addThing(newThing)" value="submit" />
+  </form>
+ 
+</div>
+
+<div class="container">
+  <ul ng-repeat="thing in main.awesomeThings">
+	<li>{{thing}}</li>
+  </ul>
+
+</div>
+
+<div class="container">
+  <ul ng-repeat="thing in main.awesomeThings">    
+		<li><a href="#">{{thing.first_name}}</a></li>
+  </ul>
+</div>
+
+
+
+
+
+<!
+  		  End timestamp			: <input type="text" name="end_timestamp" value="">
+ <! 	Contact kind 1		: <input type="text" name="contact_kind_1" value="">
+ <! 		  Contact number 1		: <input type="text" name="contact_number_1" value="">
+  <!		  Contact kind 2		: <input type="text" name="contact_kind_2" value="">
+  <!		  Contact number 2		: <input type="text" name="contact_number_2" value="">
+  <!		  Contact kind 3		: <input type="text" name="contact_kind_3" value="">
+  <!		  Contact number 3		: <input type="text" name="contact_number_3" value="">
+  <!		  Contact kind 4		: <input type="text" name="contact_kind_4" value="">
+  <!		  Contact number 4		: <input type="text" name="contact_number_4" value="">	
+<!    <p class="lead"><!This is the HTML file that I can operator on and create an simple interface</p>
+<!  ng-repeat="thing in main.awesomeThings">
+
